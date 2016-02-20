@@ -7,5 +7,19 @@
         <%= @user.name %>
       </h1>
     </section>
+    <div class="center jumbotron">
+  		<h2>Welcome to the Sign Language Assistant</h2>
+  		</br>
+  		<h3>Choose an action:-</h3>
+  		<ul>
+  			  <li><%= link_to "External Resources", extRes_path %></li>
+              <li><%= link_to "Profile", current_user %></li>
+              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Log out", logout_path, method: "delete" %>
+              </li>
+      </ul>
+	</div>
   </aside>
 </div>
